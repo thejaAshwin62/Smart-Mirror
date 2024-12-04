@@ -1,53 +1,59 @@
-![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
 
-<p style="text-align: center">
-  <a href="https://choosealicense.com/licenses/mit">
-		<img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
-	</a>
-	<img src="https://img.shields.io/github/actions/workflow/status/michmich/magicmirror/automated-tests.yaml" alt="GitHub Actions">
-	<img src="https://img.shields.io/github/checks-status/michmich/magicmirror/master" alt="Build Status">
-	<a href="https://github.com/MichMich/MagicMirror">
-		<img src="https://img.shields.io/github/stars/michmich/magicmirror?style=social">
-	</a>
-</p>
+# Smart Mirror
 
-**MagicMirror²** is an open source modular smart mirror platform. With a growing list of installable modules, the **MagicMirror²** allows you to convert your hallway or bathroom mirror into your personal assistant. **MagicMirror²** is built by the creator of [the original MagicMirror](https://michaelteeuw.nl/tagged/magicmirror) with the incredible help of a [growing community of contributors](https://github.com/MichMich/MagicMirror/graphs/contributors).
+## Overview
+The **Smart Mirror** project is a highly interactive and feature-rich system built with real-time data integration. Designed to provide users with useful daily information, it combines various technologies such as IoT, software development, and user experience design to create an immersive and functional mirror. 
 
-MagicMirror² focuses on a modular plugin system and uses [Electron](https://www.electronjs.org/) as an application wrapper. So no more web server or browser installs necessary!
+The mirror displays live updates like weather information, calendar events, and time, while integrating voice control for enhanced interaction. This project was developed using **Kali Linux** and demonstrates the capabilities of **Google Assistant** for voice commands, **RSS feeds** for news updates, and **Snow Boy** for wake word detection.
 
-## Documentation
+## Features
+- **Interactive Voice Control**: Users can interact with the mirror using voice commands via **Google Assistant**.
+- **Weather Updates**: Real-time weather data displayed, sourced from a weather API.
+- **Calendar Integration**: Displays events from a Google Calendar to keep track of your schedule.
+- **Real-time Data**: Integration of live data feeds such as news and RSS for the latest information.
+- **Wake Word Detection**: The mirror responds to the voice command "Hey, Google" using **Snow Boy** for wake word detection.
+- **Kali Linux**: Developed and run on **Kali Linux**, utilizing its powerful capabilities for system control and integration.
 
-For the full documentation including **[installation instructions](https://docs.magicmirror.builders/getting-started/installation.html)**, please visit our dedicated documentation website: [https://docs.magicmirror.builders](https://docs.magicmirror.builders).
+## Technologies Used
+- **JavaScript**: Core programming language used for building the application logic.
+- **Kali Linux**: Operating system for hosting the Smart Mirror and executing tasks.
+- **Google Assistant**: Provides voice control functionality.
+- **RSS Feeds**: For integrating live news and updates into the mirror.
+- **Snow Boy**: Wake word detection for listening and triggering voice commands.
+  
+## Setup Instructions
 
-## Links
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/smart-mirror.git
+   ```
 
-- Website: [https://magicmirror.builders](https://magicmirror.builders)
-- Documentation: [https://docs.magicmirror.builders](https://docs.magicmirror.builders)
-- Forum: [https://forum.magicmirror.builders](https://forum.magicmirror.builders)
-  - Technical discussions: https://forum.magicmirror.builders/category/11/core-system
-- Discord: [https://discord.gg/J5BAtvx](https://discord.gg/J5BAtvx)
-- Blog: [https://michaelteeuw.nl/tagged/magicmirror](https://michaelteeuw.nl/tagged/magicmirror)
-- Donations: [https://magicmirror.builders/#donate](https://magicmirror.builders/#donate)
+2. Navigate to the project directory:
+   ```bash
+   cd smart-mirror
+   ```
 
-## Contributing Guidelines
+3. Install the required dependencies:
+   ```bash
+   npm install
+   ```
 
-Contributions of all kinds are welcome, not only in the form of code but also with regards to
+4. Set up the Google Assistant API by creating a project in the Google Cloud Console and obtaining the necessary credentials. You will need to replace the placeholder in the `credentials.json` file.
 
-- bug reports
-- documentation
-- translations
+5. Run the application:
+   ```bash
+   npm start
+   ```
 
-For the full contribution guidelines, check out: [https://docs.magicmirror.builders/about/contributing.html](https://docs.magicmirror.builders/about/contributing.html)
+6. Your Smart Mirror should now be running and responding to voice commands.
 
-## Enjoying MagicMirror? Consider a donation!
+## Future Enhancements
+- Add more interactive features such as news, traffic updates, and more smart home controls.
+- Implement additional IoT devices and sensors for further integration.
+- Improve voice recognition for better user interaction.
 
-MagicMirror² is opensource and free. That doesn't mean we don't need any money.
+## Contributing
+Feel free to fork the repository, create a pull request, and contribute to improving the Smart Mirror project. All contributions are welcome!
 
-Please consider a donation to help us cover the ongoing costs like webservers and email services.
-If we receive enough donations we might even be able to free up some working hours and spend some extra time improving the MagicMirror² core.
-
-To donate, please follow [this](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G5D8E9MR5DTD2&source=url) link.
-
-<p style="text-align: center">
-	<a href="https://forum.magicmirror.builders/topic/728/magicmirror-is-voted-number-1-in-the-magpi-top-50"><img src="https://magicmirror.builders/img/magpi-best-watermark-custom.png" width="150" alt="MagPi Top 50"></a>
-</p>
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
